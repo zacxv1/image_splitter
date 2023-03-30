@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slicer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Slicer</h1>
+    <div id="controls">
+        <input type="file" id="image-upload" accept="image/*" style="display:none;">
+        <button id="upload-button">Upload Image</button>
+        <select id="num-slices">
+            <option value="2">2 slices</option>
+            <option value="3">3 slices</option>
+            <option value="4">4 slices</option>
+            <option value="5">5 slices</option>
+            <option value="6">6 slices</option>
+        </select>
+    </div>
+    <canvas id="canvas"></canvas>
+    <button id="export-button">Export Sliced Images</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
